@@ -34,16 +34,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title : 'Kmunity',
-       home: Bottomnavigationbar(),
-      //   routes: {
-      //   '/': (context) => SplashScreen(
-      //     // Here, you can decide whether to show the LoginPage or HomePage based on user authentication
-      //     child: LoginScreen(),
-      //   ),
-      //   '/login': (context) => LoginScreen(),
-      //   '/user': (context) =>  Bottomnavigationbar(),
-      //   '/admin': (context) =>  Bottomnavigationbar(),
-      // },
-    
+      //  home: Bottomnavigationbar(),
+        routes: {
+        '/': (context) => SplashScreen(
+          // Here, you can decide whether to show the LoginPage or HomePage based on user authentication
+          child: LoginScreen(),
+        ),
+        '/login': (context) => LoginScreen(),
+        '/user': (context) =>  Bottomnavigationbar(),
+        '/admin': (context) =>  Bottomnavigationbar(),
+      },
+
     );
 }}
